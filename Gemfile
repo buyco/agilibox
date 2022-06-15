@@ -7,7 +7,7 @@ gem "pg"
 gem "puma"
 gem "dotenv-rails", require: "dotenv/rails-now"
 
-gem "axlsx", github: "randym/axlsx"
+gem "axlsx"
 gem "aws-sdk-sns"
 
 group :test do

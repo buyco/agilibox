@@ -1,5 +1,5 @@
 # Microtime based uuids to be sortable
-class Agilibox::SortableUUIDGenerator
+class Agilibox::SortableUuidGenerator
   REGEX_WITH_DASHES    = /^([0-9a-f]{8})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{12})$/
   REGEX_WITHOUT_DASHES = /^([0-9a-f]{8})([0-9a-f]{4})([0-9a-f]{4})([0-9a-f]{4})([0-9a-f]{12})$/
 

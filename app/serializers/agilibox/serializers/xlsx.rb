@@ -1,4 +1,4 @@
-class Agilibox::Serializers::XLSX < Agilibox::Serializers::Base
+class Agilibox::Serializers::Xlsx < Agilibox::Serializers::Base
   def render_inline
     xlsx.to_stream.read.force_encoding("BINARY")
   end

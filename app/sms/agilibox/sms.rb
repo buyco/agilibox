@@ -1,4 +1,4 @@
-module Agilibox::SMS
+module Agilibox::Sms
   class << self
     attr_writer :strategy
 
@@ -16,9 +16,9 @@ module Agilibox::SMS
 
     def default_strategy
       if Rails.env.development? || Rails.env.test?
-        Agilibox::SMS::Strategies::Test
+        Agilibox::Sms::Strategies::Test
       else
-        Agilibox::SMS::Strategies::AmazonSNS
+        Agilibox::Sms::Strategies::AmazonSns
       end
     end
   end # class << self

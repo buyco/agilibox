@@ -1,4 +1,4 @@
-class Agilibox::SMS::Strategies::Test < Agilibox::SMS::Strategies::Base
+class Agilibox::Sms::Strategies::Test < Agilibox::Sms::Strategies::Base
   def self.deliveries
     @deliveries ||= []
   end

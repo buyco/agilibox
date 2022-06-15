@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Agilibox::SMS::Strategies::Test do
+describe Agilibox::Sms::Strategies::Test do
   before do
     described_class.deliveries.clear
   end

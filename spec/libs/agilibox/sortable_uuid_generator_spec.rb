@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Agilibox::SortableUUIDGenerator do
+RSpec.describe Agilibox::ActiveRecordUuidConcern do
   it "should generate a valid uuid" do
     uuid = described_class.generate
     expect(uuid).to match described_class::REGEX_WITH_DASHES
