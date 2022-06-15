@@ -1,4 +1,4 @@
-class Agilibox::SMS::ApplicationSMS
+class Agilibox::Sms::ApplicationSms
   attr_reader :options
 
   def initialize(options)
@@ -21,7 +21,7 @@ class Agilibox::SMS::ApplicationSMS
   end
 
   def sms(data)
-    Agilibox::SMS.strategy.new(data)
+    Agilibox::Sms.strategy.new(data)
   end
 
   class << self

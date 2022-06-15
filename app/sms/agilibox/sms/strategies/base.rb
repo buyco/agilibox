@@ -1,4 +1,4 @@
-class Agilibox::SMS::Strategies::Base
+class Agilibox::Sms::Strategies::Base
   attr_reader :data
 
   def initialize(data)

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-class TestSMS < Agilibox::SMS::ApplicationSMS
+class TestSms < Agilibox::Sms::ApplicationSms
   def hello
     sms to: "09 88 77 66 55", body: "Hello"
   end
@@ -14,7 +14,7 @@ class TestSMS < Agilibox::SMS::ApplicationSMS
   end
 end
 
-describe Agilibox::SMS::ApplicationSMS do
+describe Agilibox::Sms::ApplicationSms do
   it "should send sms" do
     expect {
       TestSMS.hello.deliver_now

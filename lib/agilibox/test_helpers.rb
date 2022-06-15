@@ -8,6 +8,6 @@ module Agilibox::TestHelpers
   end
 
   def sms_deliveries
-    Agilibox::SMS::Strategies::Test.deliveries
+    Agilibox::Sms::Strategies::Test.deliveries
   end
 end

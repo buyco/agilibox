@@ -1,4 +1,4 @@
-class Agilibox::SMS::Strategies::AmazonSNS < Agilibox::SMS::Strategies::Base
+class Agilibox::Sms::Strategies::AmazonSNS < Agilibox::Sms::Strategies::Base
   class << self
     attr_writer :region
 
@@ -30,7 +30,7 @@ class Agilibox::SMS::Strategies::AmazonSNS < Agilibox::SMS::Strategies::Base
   private
 
   def call
-    from = data[:from] || Agilibox::SMS.default_from
+    from = data[:from] || Agilibox::Sms.default_from
 
     client.publish(
       :phone_number       => data[:to],
