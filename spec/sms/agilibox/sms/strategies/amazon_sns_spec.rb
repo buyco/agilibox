@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Agilibox::Sms::Strategies::AmazonSNS do
+describe Agilibox::Sms::Strategies::AmazonSns do
   xit "should send you a SMS" do
     to   = ENV["TEST_SMS_PHONE_NUMBER"]
     body = "This is a test SMS from RSpec"

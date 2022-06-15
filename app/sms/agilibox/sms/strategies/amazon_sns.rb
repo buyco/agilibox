@@ -1,4 +1,4 @@
-class Agilibox::Sms::Strategies::AmazonSNS < Agilibox::Sms::Strategies::Base
+class Agilibox::Sms::Strategies::AmazonSns < Agilibox::Sms::Strategies::Base
   class << self
     attr_writer :region
 

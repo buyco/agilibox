@@ -18,7 +18,7 @@ module Agilibox::Sms
       if Rails.env.development? || Rails.env.test?
         Agilibox::Sms::Strategies::Test
       else
-        Agilibox::Sms::Strategies::AmazonSNS
+        Agilibox::Sms::Strategies::AmazonSns
       end
     end
   end # class << self

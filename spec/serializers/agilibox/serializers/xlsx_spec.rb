@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Agilibox::Serializers::XLSX do
+RSpec.describe Agilibox::Serializers::Xlsx do
   # rubocop:disable Style/WordArray
   let(:data) {
     [
@@ -11,7 +11,7 @@ RSpec.describe Agilibox::Serializers::XLSX do
   # rubocop:enable Style/WordArray
 
   let(:serializer) {
-    Agilibox::Serializers::XLSX.new(data)
+    Agilibox::Serializers::Xlsx.new(data)
   }
 
   let(:tempfile) { Tempfile.new(["xlsx", ".xlsx"]) }
